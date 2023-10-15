@@ -1,0 +1,86 @@
+@import 'removeStyle.scss';
+// color: #fff; 
+// color:#262626; 
+// color: #4faab3; 
+// color: #00d1a0; 
+@font-face {
+  font-family: MyriadPro;
+  src: url("../fonts/MYRIADPRO-REGULAR.OTF") format("opentype");
+  }
+body{
+  font-family: MyriadPro;
+  font-weight: normal;
+  background: #fbfcfd;
+  padding: 25px;
+}
+
+.header{
+  .header__content{
+    .header__title{
+      font-size: 30px;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      margin-bottom: 25px;
+    }
+
+
+  }
+}
+
+.nav{
+  .nav__lists{
+    display: flex;
+    gap: 20px;
+
+    .nav__list{
+      font-size: 16px;
+      font-weight: 600;
+      a{
+        color: #1253a2;
+      }
+      .router-link-active, .router-link-exact-active{
+        color:#000 ;
+      }
+    }
+  }
+}
+
+button{
+  // width: 30%;
+  // height: 30px;
+  // margin-top: 5px;
+  padding: 10px 15px 10px 10px;
+  border-radius: 5px;
+  background-color: #2f8cff;
+  color: #ffffff;
+  &:hover{
+    transition:0s all; 
+    background:#00d1a0;
+  }         
+}
+button:active{
+  background: rgba(#8B8893, .7); 
+}
+.delete{
+  background: #AB4E52;
+}
+.delHov{
+  margin-top: 0;
+  position: absolute;
+  top: 4px;
+  right: -50px;
+  width: 30px;
+  height: 30px;
+  transition: .3s all;
+  opacity: 0;
+
+  &:hover{
+    transform: scale(1.1);
+  }
+
+  &:active{
+    transform: scale(.9);
+  }
+}
